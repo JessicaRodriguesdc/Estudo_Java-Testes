@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="164789" started-at="2019-03-23T05:08:59Z" finished-at="2019-03-23T05:11:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="164789" started-at="2019-03-23T05:08:59Z" finished-at="2019-03-23T05:11:44Z">
+      <class name="com.example.tests.CT02ValidarCriticaCamposObrigatorios">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.CT02ValidarCriticaCamposObrigatorios@457e2f02]" name="setUp" is-config="true" duration-ms="9552" started-at="2019-03-23T05:08:59Z" finished-at="2019-03-23T05:09:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCT02ValidarCriticaCamposObrigatorios()[pri:0, instance:com.example.tests.CT02ValidarCriticaCamposObrigatorios@457e2f02]" name="testCT02ValidarCriticaCamposObrigatorios" duration-ms="45087" started-at="2019-03-23T05:09:08Z" finished-at="2019-03-23T05:09:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCT02ValidarCriticaCamposObrigatorios -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.CT02ValidarCriticaCamposObrigatorios@457e2f02]" name="tearDown" is-config="true" duration-ms="999" started-at="2019-03-23T05:09:53Z" finished-at="2019-03-23T05:09:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.CT02ValidarCriticaCamposObrigatorios -->
+      <class name="com.example.tests.CT03EnviarMensagem">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.CT03EnviarMensagem@5c7fa833]" name="setUp" is-config="true" duration-ms="11495" started-at="2019-03-23T05:09:54Z" finished-at="2019-03-23T05:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCT03EnviarMensagem()[pri:0, instance:com.example.tests.CT03EnviarMensagem@5c7fa833]" name="testCT03EnviarMensagem" duration-ms="58749" started-at="2019-03-23T05:10:06Z" finished-at="2019-03-23T05:11:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCT03EnviarMensagem -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.CT03EnviarMensagem@5c7fa833]" name="tearDown" is-config="true" duration-ms="4545" started-at="2019-03-23T05:11:05Z" finished-at="2019-03-23T05:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.CT03EnviarMensagem -->
+      <class name="com.example.tests.CT01ValidarLayout">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.example.tests.CT01ValidarLayout@39aeed2f]" name="setUp" is-config="true" duration-ms="6432" started-at="2019-03-23T05:11:09Z" finished-at="2019-03-23T05:11:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testCT01ValidarLayout()[pri:0, instance:com.example.tests.CT01ValidarLayout@39aeed2f]" name="testCT01ValidarLayout" duration-ms="27298" started-at="2019-03-23T05:11:16Z" finished-at="2019-03-23T05:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCT01ValidarLayout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.example.tests.CT01ValidarLayout@39aeed2f]" name="tearDown" is-config="true" duration-ms="561" started-at="2019-03-23T05:11:43Z" finished-at="2019-03-23T05:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.example.tests.CT01ValidarLayout -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
