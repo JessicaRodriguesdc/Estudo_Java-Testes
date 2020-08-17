@@ -9,6 +9,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 //import org.openqa.selenium.support.ui.Select;
 
+
 public class CT01ValidarLayout {
   private WebDriver driver;
   private String baseUrl;
