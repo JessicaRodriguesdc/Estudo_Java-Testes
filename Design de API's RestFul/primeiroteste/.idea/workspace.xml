@@ -56,7 +56,22 @@
       <recent name="com.cursoteste" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MockitoTests.primeiroTesteMockito">
+  <component name="RunManager" selected="JUnit.MockitoTests">
+    <configuration name="MockitoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="primeiroteste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cursoteste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cursoteste" />
+      <option name="MAIN_CLASS_NAME" value="com.cursoteste.MockitoTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MockitoTests.primeiroTesteMockito" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primeiroteste" />
       <extension name="coverage">
@@ -84,22 +99,6 @@
       <option name="PACKAGE_NAME" value="com.cursoteste" />
       <option name="MAIN_CLASS_NAME" value="com.cursoteste.PrimeiroTeste" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeiroTeste.estruturaDeUmTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="primeiroteste" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cursoteste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cursoteste" />
-      <option name="MAIN_CLASS_NAME" value="com.cursoteste.PrimeiroTeste" />
-      <option name="METHOD_NAME" value="estruturaDeUmTeste" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MockitoTests" />
         <item itemvalue="JUnit.MockitoTests.primeiroTesteMockito" />
         <item itemvalue="JUnit.PrimeiroTeste" />
         <item itemvalue="JUnit.PrimeiroTeste.naoDeveSomar2NumerosNegativos" />
         <item itemvalue="JUnit.PrimeiroTeste.estruturaDeUmTesteComAssertJ" />
-        <item itemvalue="JUnit.PrimeiroTeste.estruturaDeUmTeste" />
       </list>
     </recent_temporary>
   </component>
@@ -167,22 +166,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1598210412709" />
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1598220106938">
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1598220196579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598220106938" />
-    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1598220106938">
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598220196579" />
+    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1598220196578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598220106938" />
-    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1598220106938">
+    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598220196578" />
+    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1598220196578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598220106938" />
-    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1598220106938">
+    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598220196578" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1598220196578">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598220106938" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598220196578" />
     <state x="65" y="66" key="new project wizard" timestamp="1598214977423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
