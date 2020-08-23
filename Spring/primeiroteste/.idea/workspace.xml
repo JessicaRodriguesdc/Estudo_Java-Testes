@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55bb0a31-0259-4f9a-b38e-12556f896055" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/primeiroteste.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cursoteste/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +53,7 @@
       <recent name="com.cursoteste" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PrimeiroTeste.estruturaDeUmTesteComAssertJ">
     <configuration name="PrimeiroTeste.estruturaDeUmTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primeiroteste" />
       <extension name="coverage">
@@ -79,8 +70,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimeiroTeste.estruturaDeUmTesteComAssertJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="primeiroteste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cursoteste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cursoteste" />
+      <option name="MAIN_CLASS_NAME" value="com.cursoteste.PrimeiroTeste" />
+      <option name="METHOD_NAME" value="estruturaDeUmTesteComAssertJ" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrimeiroTeste.estruturaDeUmTesteComAssertJ" />
         <item itemvalue="JUnit.PrimeiroTeste.estruturaDeUmTeste" />
       </list>
     </recent_temporary>
@@ -106,21 +114,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1598210412709" />
-    <state width="1323" height="237" key="GridCell.Tab.0.bottom" timestamp="1598210772653">
+    <state width="1323" height="94" key="GridCell.Tab.0.bottom" timestamp="1598211577271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="237" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598210772653" />
-    <state width="1323" height="237" key="GridCell.Tab.0.center" timestamp="1598210772653">
+    <state width="1323" height="94" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598211577271" />
+    <state width="1323" height="94" key="GridCell.Tab.0.center" timestamp="1598211577271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="237" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598210772653" />
-    <state width="1323" height="237" key="GridCell.Tab.0.left" timestamp="1598210772652">
+    <state width="1323" height="94" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598211577271" />
+    <state width="1323" height="94" key="GridCell.Tab.0.left" timestamp="1598211577271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="237" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598210772652" />
-    <state width="1323" height="237" key="GridCell.Tab.0.right" timestamp="1598210772653">
+    <state width="1323" height="94" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598211577271" />
+    <state width="1323" height="94" key="GridCell.Tab.0.right" timestamp="1598211577271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="237" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598210772653" />
+    <state width="1323" height="94" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598211577271" />
   </component>
 </project>
