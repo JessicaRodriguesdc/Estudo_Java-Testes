@@ -1,4 +1,4 @@
 package com.cursoteste;
 
-public class CadastroVazioException {
+public class CadastroVazioException extends RuntimeException {
 }

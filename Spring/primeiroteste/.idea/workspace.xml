@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55bb0a31-0259-4f9a-b38e-12556f896055" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/CadastroPessoa.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/main/java/com/cursoteste/CadastroPessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/main/java/com/cursoteste/CadastroVazioException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/main/java/com/cursoteste/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/main/java/com/cursoteste/PessoaSemNotException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaTeste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/target/classes/com/cursoteste/CadastroPessoa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/target/classes/com/cursoteste/Pessoa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaTeste.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,5 +177,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="122" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598214646418" />
+    <state x="65" y="66" key="new project wizard" timestamp="1598214977423">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="66" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1598214977423" />
   </component>
 </project>

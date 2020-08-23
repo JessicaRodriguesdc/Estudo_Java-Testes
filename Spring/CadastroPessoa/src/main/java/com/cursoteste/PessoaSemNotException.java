@@ -1,4 +1,4 @@
 package com.cursoteste;
 
-public class PessoaSemNotException {
+public class PessoaSemNotException extends RuntimeException {
 }
