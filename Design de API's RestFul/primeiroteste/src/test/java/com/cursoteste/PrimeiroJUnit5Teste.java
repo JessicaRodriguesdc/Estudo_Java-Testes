@@ -1,61 +1,23 @@
 package com.cursoteste;
 
-//AssertJ
-
 import org.assertj.core.api.Assertions;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-//jUnit4
 
-public class PrimeiroTeste {
+@ExtendWith(MockitoExtension.class)
+public class PrimeiroJUnit5Teste {
 
+    @Mock
     Calculadora calculadora;
     int numero1 = 10, numero2 = 5;
 
-    @Before
+    @BeforeEach
     public void setUp(){
         calculadora = new Calculadora();
-    }
-
-    @Test
-    public void deveSomar2NumerosJUnit(){
-        //cenario
-        int numero1 = 10, numero2 = 5;
-
-        //execucao
-        int resultado = numero1 + numero2;
-
-        //verificacoes
-            //dar certo
-        Assert.assertEquals(15,resultado);
-            //dar erro
-        //Assert.assertEquals(10,resultado);
-
-    }
-
-
-    @Test
-    public void deveSomar2NumerosAssertJ(){
-        //cenario
-        int numero1 = 10, numero2 = 5;
-
-        //execucao
-        int resultado = numero1 + numero2;
-
-        //verificacoes
-            //resultado entre
-        Assertions.assertThat(resultado).isBetween(14,16);
-            //resultado igual
-        Assertions.assertThat(resultado).isEqualTo(15);
-            //resultado maior que numero informado
-        Assertions.assertThat(resultado).isGreaterThan(10);
-            //resultado e possitivo
-        Assertions.assertThat(resultado).isPositive();
-
-            //string e maior que a passada
-        //Assertions.assertThat("").isGreaterThanOrEqualTo("jessica");
     }
 
     @Test
@@ -70,13 +32,15 @@ public class PrimeiroTeste {
         Assertions.assertThat(resultado).isEqualTo(15);
     }
 
-    @Test(expected = RuntimeException.class)
+    @Test
     public void naoDeveSomar2NumerosNegativos(){
         //cenario
         int num1 = -10, num2 = 5;
 
         //execucao
-        calculadora.somar(num1 , num2);
+        org.junit.jupiter.api.Assertions
+                .assertThrows(RuntimeException.class,
+                        ()-> calculadora.somar(num1 , num2) );
     }
 
     @Test
@@ -112,13 +76,16 @@ public class PrimeiroTeste {
         Assertions.assertThat(resultado).isEqualTo(2);
     }
 
-    @Test(expected = ArithmeticException.class)
+    @Test
     public void naoDeveDividirPorZero(){
         //cenario
         int numero1 = 10, numero2 = 0;
 
         //execucao
-        calculadora.dividir(numero1 , numero2);
+        org.junit.jupiter.api.Assertions
+                .assertThrows(ArithmeticException.class,
+                        ()-> calculadora.dividir(numero1 , numero2));
+
     }
 }
 
@@ -141,9 +108,6 @@ class Calculadora{
     }
 
     float dividir(int num, int num2){
-//        if(num2 < 0){
-//            throw new RuntimeException("Nao e permitido divisao com 0.");
-//        }
         return num / num2;
     }
 }

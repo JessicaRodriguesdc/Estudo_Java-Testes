@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55bb0a31-0259-4f9a-b38e-12556f896055" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaJUnit5Teste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaJUnit5Teste.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTesteJUnit5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CadastroPessoa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CadastroPessoa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaTeste.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaTeste.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/MockitoJUnit5Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/cursoteste/MockitoJUnit5Tests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/cursoteste/PrimeiroJUnit5Teste.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cursoteste/MockitoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/MockitoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTesteJUnit5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroJUnit5Teste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cursoteste/Calculadora.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cursoteste/Calculadora.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cursoteste/MockitoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cursoteste/MockitoTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cursoteste/PrimeiroTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cursoteste/PrimeiroTeste.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +60,14 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cursoteste" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cursoteste" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jessi\OneDrive\Área de Trabalho\Arquivos\Estudo_Java-Testes\Design de API's RestFul\primeiroteste\src\test\java\com\cursoteste" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MockitoTests">
+  <component name="RunManager" selected="JUnit.PrimeiroJUnit5Teste">
     <configuration name="MockitoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primeiroteste" />
       <extension name="coverage">
@@ -94,6 +99,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimeiroJUnit5Teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="primeiroteste" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cursoteste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cursoteste" />
+      <option name="MAIN_CLASS_NAME" value="com.cursoteste.PrimeiroJUnit5Teste" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrimeiroTeste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="primeiroteste" />
       <extension name="coverage">
@@ -105,22 +125,6 @@
       <option name="PACKAGE_NAME" value="com.cursoteste" />
       <option name="MAIN_CLASS_NAME" value="com.cursoteste.PrimeiroTeste" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeiroTeste.estruturaDeUmTesteComAssertJ" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="primeiroteste" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cursoteste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cursoteste" />
-      <option name="MAIN_CLASS_NAME" value="com.cursoteste.PrimeiroTeste" />
-      <option name="METHOD_NAME" value="estruturaDeUmTesteComAssertJ" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrimeiroJUnit5Teste" />
         <item itemvalue="JUnit.MockitoTests" />
         <item itemvalue="JUnit.MockitoTests.primeiroTesteMockito" />
         <item itemvalue="JUnit.PrimeiroTeste" />
         <item itemvalue="JUnit.PrimeiroTeste.naoDeveSomar2NumerosNegativos" />
-        <item itemvalue="JUnit.PrimeiroTeste.estruturaDeUmTesteComAssertJ" />
       </list>
     </recent_temporary>
   </component>
@@ -176,22 +180,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598222204634" />
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1598220196579">
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1598223657991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598220196579" />
-    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1598220196578">
+    <state width="1323" height="129" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598223657991" />
+    <state width="1323" height="129" key="GridCell.Tab.0.center" timestamp="1598223657991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598220196578" />
-    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1598220196578">
+    <state width="1323" height="129" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598223657991" />
+    <state width="1323" height="129" key="GridCell.Tab.0.left" timestamp="1598223657991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598220196578" />
-    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1598220196578">
+    <state width="1323" height="129" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598223657991" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right" timestamp="1598223657991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598220196578" />
+    <state width="1323" height="129" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598223657991" />
     <state x="65" y="66" key="new project wizard" timestamp="1598214977423">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
