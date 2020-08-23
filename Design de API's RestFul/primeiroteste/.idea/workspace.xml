@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55bb0a31-0259-4f9a-b38e-12556f896055" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaJUnit5Teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaJUnit5Teste.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/PrimeiroTesteJUnit5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadastroPessoa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CadastroPessoa/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CadastroPessoa/src/test/java/com/cursoteste/CadastroPessoaTeste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/../CadastroPessoa/target/test-classes/com/cursoteste/CadastroPessoaTeste.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cursoteste/MockitoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cursoteste/MockitoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/primeiroteste.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/primeiroteste.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/cursoteste/MockitoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/cursoteste/MockitoTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +52,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CadastroPessoa" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.cursoteste" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jessi\OneDrive\Área de Trabalho\Arquivos\Estudo_Java-Testes\Design de API's RestFul\primeiroteste\src\test\java\com\cursoteste" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MockitoTests">
@@ -166,6 +172,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="223" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1598210412709" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1598222204634">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1598222204634" />
     <state width="1323" height="129" key="GridCell.Tab.0.bottom" timestamp="1598220196579">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
