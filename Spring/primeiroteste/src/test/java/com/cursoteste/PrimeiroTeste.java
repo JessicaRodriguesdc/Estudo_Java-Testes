@@ -5,9 +5,18 @@ import org.assertj.core.api.Assertions;
 
 //jUnit4
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class PrimeiroTeste {
+
+    Calculadora calculadora;
+    int numero1 = 10, numero2 = 5;
+
+    @Before
+    public void setUp(){
+        calculadora = new Calculadora();
+    }
 
     @Test
     public void deveSomar2NumerosJUnit(){
@@ -44,7 +53,6 @@ public class PrimeiroTeste {
             //resultado e possitivo
         Assertions.assertThat(resultado).isPositive();
 
-
             //string e maior que a passada
         //Assertions.assertThat("").isGreaterThanOrEqualTo("jessica");
     }
@@ -52,7 +60,6 @@ public class PrimeiroTeste {
     @Test
     public void deveSomar2Numeros(){
         //cenario
-        Calculadora calculadora = new Calculadora();
         int numero1 = 10, numero2 = 5;
 
         //execucao
@@ -65,7 +72,6 @@ public class PrimeiroTeste {
     @Test(expected = RuntimeException.class)
     public void naoDeveSomar2NumerosNegativos(){
         //cenario
-        Calculadora calculadora = new Calculadora();
         int num1 = -10, num2 = 5;
 
         //execucao
@@ -75,8 +81,6 @@ public class PrimeiroTeste {
     @Test
     public void deveSubtrair2Numeros(){
         //cenario
-        Calculadora calculadora = new Calculadora();
-        int numero1 = 10, numero2 = 5;
 
         //execucao
         int resultado = calculadora.subtrair(numero1 , numero2);
@@ -88,8 +92,6 @@ public class PrimeiroTeste {
     @Test
     public void deveMultiplicar2Numeros(){
         //cenario
-        Calculadora calculadora = new Calculadora();
-        int numero1 = 10, numero2 = 5;
 
         //execucao
         int resultado = calculadora.multiplicar(numero1 , numero2);
@@ -101,24 +103,21 @@ public class PrimeiroTeste {
     @Test
     public void deveDividir2Numeros(){
         //cenario
-        Calculadora calculadora = new Calculadora();
-        int numero1 = 10, numero2 = 5;
 
         //execucao
-        int resultado = calculadora.dividir(numero1 , numero2);
+        float resultado = calculadora.dividir(numero1 , numero2);
 
         //verificacoes
         Assertions.assertThat(resultado).isEqualTo(2);
     }
 
-    @Test(expected = RuntimeException.class)
-    public void naoDeveDividir2NumerosNegativos(){
+    @Test(expected = ArithmeticException.class)
+    public void naoDeveDividirPorZero(){
         //cenario
-        Calculadora calculadora = new Calculadora();
-        int num1 = -10, num2 = 0;
+        int numero1 = 10, numero2 = 0;
 
         //execucao
-        calculadora.dividir(num1 , num2);
+        calculadora.dividir(numero1 , numero2);
     }
 }
 
@@ -133,23 +132,17 @@ class Calculadora{
     }
 
     int subtrair(int num, int num2){
-//        if(num < 0 || num2 < 0){
-//            throw new RuntimeException("Nao e permitido somar numeros negativos.");
-//        }
         return num - num2;
     }
 
     int multiplicar(int num, int num2){
-//        if(num < 0 || num2 < 0){
-//            throw new RuntimeException("Nao e permitido somar numeros negativos.");
-//        }
         return num * num2;
     }
 
-    int dividir(int num, int num2){
-        if(num2 < 0){
-            throw new RuntimeException("Nao e permitido divisao com 0 ou abaixo.");
-        }
+    float dividir(int num, int num2){
+//        if(num2 < 0){
+//            throw new RuntimeException("Nao e permitido divisao com 0.");
+//        }
         return num / num2;
     }
 }
