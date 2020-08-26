@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.library.libraryapi.api.dto.BooKDTO;
 import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.service.BookService;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,6 +21,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import static org.hamcrest.Matchers.hasSize;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -69,7 +71,18 @@ public class BookControllerTest {
 
     @Test
     @DisplayName("Deve  lancar erro de validacao quando nao houver dados suficiente para criacao do livro.")
-    public void createInvalidBookTest(){
+    public void createInvalidBookTest() throws Exception{
+        String json = new ObjectMapper().writeValueAsString(new BooKDTO());
 
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders
+                .post(BOOK_API)
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .content(json);
+
+        mvc
+                .perform(request)
+                .andExpect(status().isBadRequest() )
+                .andExpect(jsonPath("errors", hasSize(3)));
     }
 }
