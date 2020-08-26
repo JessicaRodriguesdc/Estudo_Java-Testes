@@ -2,6 +2,7 @@ package com.library.libraryapi.api.resource;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.library.libraryapi.api.dto.BooKDTO;
+import com.library.libraryapi.exception.BusinessException;
 import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.service.BookService;
 import org.hamcrest.Matchers;
@@ -40,10 +41,11 @@ public class BookControllerTest {
     @MockBean
     BookService service;
 
+    //validacao de integridade
     @Test
     @DisplayName("Deve criar um livro com sucesso.")
     public void createBookTest() throws Exception{
-        BooKDTO dto = BooKDTO.builder().author("Jessi").title("As aventuras").isbn("001").build();
+        BooKDTO dto = createNewBook();
         Book saveBook = Book.builder().id(10l).author("Jessi").title("As aventuras").isbn("001").build();
 
         BDDMockito.given(service.save(Mockito.any(Book.class)))
@@ -84,5 +86,33 @@ public class BookControllerTest {
                 .perform(request)
                 .andExpect(status().isBadRequest() )
                 .andExpect(jsonPath("errors", hasSize(3)));
+    }
+
+    //validacao de regra de negocio
+    @Test
+    @DisplayName("Deve lancar um erro ao tentar cadastrar um livro com isbn ja utilizado.")
+    public void createBookWithDuplicatedIsbn() throws Exception{
+        BooKDTO dto = createNewBook();
+        String json = new ObjectMapper().writeValueAsString(dto);
+        String mensagemErro = "Isbn ja cadastrado.";
+        BDDMockito.given(service.save(Mockito.any(Book.class)))
+                .willThrow(new BusinessException(mensagemErro));
+
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders
+                .post(BOOK_API)
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON)
+                .content(json);
+
+        mvc.perform( request )
+                .andExpect(status().isBadRequest())
+                .andExpect(jsonPath("errors",hasSize(1)))
+                .andExpect(jsonPath("errors[0]").value(mensagemErro))
+        ;
+
+    }
+
+    private BooKDTO createNewBook() {
+        return BooKDTO.builder().author("Jessi").title("As aventuras").isbn("001").build();
     }
 }
