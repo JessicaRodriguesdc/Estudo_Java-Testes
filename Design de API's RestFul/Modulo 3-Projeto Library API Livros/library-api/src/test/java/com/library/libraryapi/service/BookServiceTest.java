@@ -113,4 +113,5 @@ public class BookServiceTest {
         assertThat( book.isPresent()).isFalse();
     }
 
+    public void teste(){}
 }
