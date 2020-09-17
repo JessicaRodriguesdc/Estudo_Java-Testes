@@ -6,6 +6,7 @@ import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.model.entity.Loan;
 import com.library.libraryapi.service.BookService;
 import com.library.libraryapi.service.LoanService;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -67,6 +68,29 @@ public class LoanControllerTest {
                 .andExpect( status().isCreated() )
                 .andExpect( content().string("1"))
         ;
+    }
+
+    @Test
+    @DisplayName("Deve retornar um erro ao tentar fazer emprestimo de um livro inexistente.")
+    public void InvalidIsbnCreateLoanTest() throws Exception{
+
+        LoanDto dto = LoanDto.builder().isbn("123").customer("jessica").build();
+        String json = new ObjectMapper().writeValueAsString(dto);
+
+        BDDMockito.given(bookService.getBookByIsbn("123"))
+                .willReturn(Optional.empty());
+
+        MockHttpServletRequestBuilder request = MockMvcRequestBuilders.post(LOAN_API)
+                .accept(MediaType.APPLICATION_JSON)
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(json);
+
+        mvc.perform(request)
+                .andExpect( status().isBadRequest() )
+                .andExpect( jsonPath("errors", Matchers.hasSize(1)))
+                .andExpect( jsonPath("errors[0]").value("Book not found for passed isbn"))
+        ;
+
     }
 
 }
