@@ -1,6 +1,7 @@
 package com.library.libraryapi.service;
 
 
+import com.library.libraryapi.exception.BusinessException;
 import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.model.entity.Loan;
 import com.library.libraryapi.model.repository.LoanRepository;
@@ -16,7 +17,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import java.time.LocalDate;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
-import static org.mockito.Mockito.when;
+import static org.assertj.core.api.Java6Assertions.catchThrowable;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(SpringExtension.class)
 @ActiveProfiles("test")
@@ -58,6 +60,28 @@ public class LoanServiceTest {
         assertThat(loan.getBook().getId()).isEqualTo(savedLoan.getBook().getId());
         assertThat(loan.getCustomer()).isEqualTo(savedLoan.getCustomer());
         assertThat(loan.getLoanDate()).isEqualTo(savedLoan.getLoanDate());
+    }
+
+    @Test
+    @DisplayName("Deve lancar erro de negocio ao salvar um emprestimo com livro ja emprestimo")
+    public void loanedBookSaveTest(){
+        Book book = Book.builder().id(1l).build();
+        String customer = "Jessica";
+        Loan savingLoan = Loan.builder()
+                .book(book)
+                .customer(customer)
+                .loanDate(LocalDate.now())
+                .build();
+        
+        when(repository.existsByBookAndNotReturned(book)).thenReturn(true);
+
+        Throwable exception = catchThrowable(() -> service.save(savingLoan));
+
+        assertThat(exception)
+                .isInstanceOf(BusinessException.class)
+                .hasMessage("Book already loaned");
+
+        verify(repository, never()).save(savingLoan);
     }
 
 }
