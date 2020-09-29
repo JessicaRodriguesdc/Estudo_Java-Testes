@@ -31,7 +31,7 @@ public class LoanRepositoryTest {
 
     @Test
     @DisplayName("Deve verificar se existe emprestimo nao devolvido para o livro.")
-    public void existsByBookAndNotReturnedTest() throws Exception{
+    public void existsByBookAndNotReturnedTest(){
         //cenario
         Book book = createNewBook("123");
         entityManager.persist(book);

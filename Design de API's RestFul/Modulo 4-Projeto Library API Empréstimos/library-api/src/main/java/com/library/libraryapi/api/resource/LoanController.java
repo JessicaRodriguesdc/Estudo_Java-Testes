@@ -1,6 +1,7 @@
 package com.library.libraryapi.api.resource;
 
 import com.library.libraryapi.api.dto.LoanDto;
+import com.library.libraryapi.api.dto.ReturnedLoanDTO;
 import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.model.entity.Loan;
 import com.library.libraryapi.service.BookService;
@@ -38,5 +39,16 @@ public class LoanController {
         entity = service.save(entity);
         return entity.getId();
 
+    }
+
+    @PatchMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void returnBook (
+            @PathVariable Long id,
+            @RequestBody ReturnedLoanDTO dto){
+        Loan loan = service.getById(id).get();
+        loan.setReturned(dto.getReturned());
+
+        service.update(loan);
     }
 }
