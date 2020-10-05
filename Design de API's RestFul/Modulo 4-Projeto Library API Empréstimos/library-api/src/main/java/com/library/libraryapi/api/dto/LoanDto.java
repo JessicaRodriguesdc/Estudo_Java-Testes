@@ -14,6 +14,6 @@ public class LoanDto {
     private Long id;
     private String isbn;
     private String customer;
-    private BooKDTO kdto;
+    private BooKDTO book;
 
 }
