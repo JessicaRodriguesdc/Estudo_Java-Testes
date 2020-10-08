@@ -5,6 +5,7 @@ import com.library.libraryapi.api.dto.BooKDTO;
 import com.library.libraryapi.exception.BusinessException;
 import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.service.BookService;
+import com.library.libraryapi.service.LoanService;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -45,6 +46,9 @@ public class BookControllerTest {
     //Criar uma instancia mocada
     @MockBean
     BookService service;
+
+    @MockBean
+    LoanService loanService;
 
     //validacao de integridade
     @Test
