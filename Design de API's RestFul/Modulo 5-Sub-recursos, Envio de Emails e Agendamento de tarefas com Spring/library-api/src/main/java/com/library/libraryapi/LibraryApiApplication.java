@@ -10,7 +10,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import java.util.Scanner;
 
 @SpringBootApplication
-@EnableScheduling
+//@EnableScheduling
 public class LibraryApiApplication {
 
 	//cria uma instancia para servir a toda a aplicacao
@@ -19,10 +19,10 @@ public class LibraryApiApplication {
 		return new ModelMapper();
 	}
 
-	@Scheduled(cron = "0 21 14 1/1 * ?")
-	public void testeAgendamentoTarefas(){
-		System.out.println("AGENDAMENTO DE TAREFAS FUNCIONADO COM SUCESSO");
-	}
+//	@Scheduled(cron = "0 21 14 1/1 * ?")
+//	public void testeAgendamentoTarefas(){
+//		System.out.println("AGENDAMENTO DE TAREFAS FUNCIONADO COM SUCESSO");
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryApiApplication.class, args);
