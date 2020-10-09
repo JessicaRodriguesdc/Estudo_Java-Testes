@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +28,6 @@ public class BookController {
     private final BookService service;
     private final ModelMapper modelMapper;
     private final LoanService loanService;
-
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
