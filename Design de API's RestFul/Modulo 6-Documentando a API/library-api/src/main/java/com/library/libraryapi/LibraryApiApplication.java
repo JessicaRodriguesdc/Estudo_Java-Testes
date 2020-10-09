@@ -12,7 +12,6 @@ import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
-//@EnableScheduling
 public class LibraryApiApplication {
 
 	@Autowired
@@ -32,12 +31,6 @@ public class LibraryApiApplication {
 			System.out.println("EMAILS ENVIADOS");
 		};
 	}
-
-
-//	@Scheduled(cron = "0 21 14 1/1 * ?")
-//	public void testeAgendamentoTarefas(){
-//		System.out.println("AGENDAMENTO DE TAREFAS FUNCIONADO COM SUCESSO");
-//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryApiApplication.class, args);
