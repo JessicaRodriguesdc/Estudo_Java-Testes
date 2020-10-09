@@ -8,6 +8,8 @@ import com.library.libraryapi.model.entity.Book;
 import com.library.libraryapi.model.entity.Loan;
 import com.library.libraryapi.service.BookService;
 import com.library.libraryapi.service.LoanService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
@@ -24,6 +26,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/loans")
 @RequiredArgsConstructor
+@Api("Loan API")
 public class LoanController {
 
     private final LoanService service;
@@ -32,6 +35,7 @@ public class LoanController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
+    @ApiOperation("Creates a loan")
     public Long create(@RequestBody LoanDto dto){
 
         Book book = bookService
@@ -52,6 +56,7 @@ public class LoanController {
 
     @PatchMapping("{id}")
     @ResponseStatus(HttpStatus.OK)
+    @ApiOperation("Updates a loan")
     public void returnBook (
             @PathVariable Long id,
             @RequestBody ReturnedLoanDTO dto){
@@ -62,6 +67,7 @@ public class LoanController {
     }
 
     @GetMapping
+    @ApiOperation("Find loans by params")
     public Page<LoanDto> find (LoanFilterDTO dto, Pageable pageaRequest){
         Page<Loan> result = service.find(dto, pageaRequest);
         List<LoanDto> loans = result

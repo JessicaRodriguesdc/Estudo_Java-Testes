@@ -14,8 +14,8 @@ import java.util.List;
 @SpringBootApplication
 public class LibraryApiApplication {
 
-	@Autowired
-	private EmailService emailService;
+//	@Autowired
+//	private EmailService emailService;
 
 	//cria uma instancia para servir a toda a aplicacao
 	@Bean
@@ -23,14 +23,14 @@ public class LibraryApiApplication {
 		return new ModelMapper();
 	}
 
-	@Bean
-	public CommandLineRunner runner(){
-		return args -> {
-			List<String> emails = Arrays.asList("library-api-c26b8d@inbox.mailtrap.io");
-			emailService.sendMails("Testando serviço de emails.",emails);
-			System.out.println("EMAILS ENVIADOS");
-		};
-	}
+//	@Bean
+//	public CommandLineRunner runner(){
+//		return args -> {
+//			List<String> emails = Arrays.asList("library-api-c26b8d@inbox.mailtrap.io");
+//			emailService.sendMails("Testando serviço de emails.",emails);
+//			System.out.println("EMAILS ENVIADOS");
+//		};
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(LibraryApiApplication.class, args);
