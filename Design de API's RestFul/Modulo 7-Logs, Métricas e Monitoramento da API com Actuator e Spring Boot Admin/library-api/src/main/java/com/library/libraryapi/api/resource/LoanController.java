@@ -11,6 +11,7 @@ import com.library.libraryapi.service.LoanService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -27,6 +28,7 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/loans")
 @RequiredArgsConstructor
 @Api("Loan API")
+@Slf4j
 public class LoanController {
 
     private final LoanService service;
