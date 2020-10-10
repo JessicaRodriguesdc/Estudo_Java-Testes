@@ -12,11 +12,10 @@ import java.util.Arrays;
 import java.util.List;
 
 @SpringBootApplication
-//@EnableScheduling
 public class LibraryApiApplication {
 
-	@Autowired
-	private EmailService emailService;
+//	@Autowired
+//	private EmailService emailService;
 
 	//cria uma instancia para servir a toda a aplicacao
 	@Bean
@@ -24,19 +23,13 @@ public class LibraryApiApplication {
 		return new ModelMapper();
 	}
 
-	@Bean
-	public CommandLineRunner runner(){
-		return args -> {
-			List<String> emails = Arrays.asList("library-api-c26b8d@inbox.mailtrap.io");
-			emailService.sendMails("Testando serviço de emails.",emails);
-			System.out.println("EMAILS ENVIADOS");
-		};
-	}
-
-
-//	@Scheduled(cron = "0 21 14 1/1 * ?")
-//	public void testeAgendamentoTarefas(){
-//		System.out.println("AGENDAMENTO DE TAREFAS FUNCIONADO COM SUCESSO");
+//	@Bean
+//	public CommandLineRunner runner(){
+//		return args -> {
+//			List<String> emails = Arrays.asList("library-api-c26b8d@inbox.mailtrap.io");
+//			emailService.sendMails("Testando serviço de emails.",emails);
+//			System.out.println("EMAILS ENVIADOS");
+//		};
 //	}
 
 	public static void main(String[] args) {
