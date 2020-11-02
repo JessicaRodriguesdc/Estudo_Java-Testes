@@ -1,0 +1,271 @@
+{
+  "id": "24c2dd27-34aa-4646-9395-d4a8abcd7b03",
+  "version": "2.0",
+  "name": "ST01Contato",
+  "url": "https://livros.inoveteste.com.br/",
+  "tests": [{
+    "id": "5d20ef21-5219-449c-aa65-3f903720534c",
+    "name": "CT01ValidarLayout",
+    "commands": [{
+      "id": "3ebf78fc-65cc-4a31-852b-2067f802946e",
+      "comment": "",
+      "command": "//Acessar a pagina de contato do site inove teste",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35da8756-35c8-4328-8502-59635e2d5dc0",
+      "comment": "",
+      "command": "open",
+      "target": "/contato",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26fba634-9316-4571-b7c7-c953fb6e210c",
+      "comment": "",
+      "command": "//Validar os layout do formulario de contato",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b74a8ad9-98e8-4d4a-8c31-59c38a03c070",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Envie uma mensagem"
+    }, {
+      "id": "9f688f94-e6a6-4039-b10b-8c4e3debf277",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-name",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7c9b625-ab05-40de-8004-80afa26e3a38",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-email",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bda6df34-c4c0-4b2c-af51-fd10c5f49f0d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-subject",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "feeba55a-fd3a-4cc8-b034-2632f77b00a7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=your-message",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73ff50d2-6807-422b-9b36-8f162734d194",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input.wpcf7-form-control",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f6b5901f-eca3-499e-bf71-86f783823c7f",
+    "name": "CT02ValidarCriticaCamposObrigatorios",
+    "commands": [{
+      "id": "5113810b-2a54-4a95-8a46-d5801ff98f38",
+      "comment": "",
+      "command": "//Acessar a pagina de contato do site inove teste",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05c7d31e-7f85-43c8-9b86-0ae8080db12f",
+      "comment": "",
+      "command": "open",
+      "target": "/contato",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f476852-908c-4fed-83dc-51e984839489",
+      "comment": "",
+      "command": "//Clica no botao Enviar sem preencher os campos",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80aecf07-eccb-4d14-8919-3bd0a75604b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpcf7-submit",
+      "targets": [
+        ["css=.wpcf7-submit", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08c9b8a7-e9e7-49e4-b078-17412505edd2",
+      "comment": "",
+      "command": "//Validar as criticas dos campos obrigatorios",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20a1303d-f44e-4a75-953e-76d126130f85",
+      "comment": "",
+      "command": "pause",
+      "target": "10000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79849e23-9275-41e1-8d9a-e7a03fa2b2f0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span.wpcf7-not-valid-tip",
+      "targets": [],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "c22c59f1-6bd9-410b-adbb-de156fd93afc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span.wpcf7-not-valid-tip",
+      "targets": [],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "c3903e49-68ac-475d-84f1-4e7737513a10",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span.wpcf7-not-valid-tip",
+      "targets": [],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "b50ba2ea-5187-47c4-b967-4d7c299bd771",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=span.wpcf7-not-valid-tip",
+      "targets": [],
+      "value": "O campo é obrigatório."
+    }, {
+      "id": "5cf03b5f-ab10-4d83-bc41-e2e37343cf2a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpcf7-response-output",
+      "targets": [
+        ["css=.wpcf7-response-output", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "Um ou mais campos possuem um erro. Verifique e tente novamente."
+    }]
+  }, {
+    "id": "38f76680-7dca-4e93-97e8-259216b7872b",
+    "name": "CT03EnviarMensagem",
+    "commands": [{
+      "id": "0df1793e-58dd-40c2-a285-26abb0c42a36",
+      "comment": "",
+      "command": "//Acessar a pagina de contato do site inove teste",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c97f582-d583-409a-b0ba-3f27272784a0",
+      "comment": "",
+      "command": "open",
+      "target": "/contato",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "164f80cb-39d9-490d-acb1-7836b1e0ddb5",
+      "comment": "",
+      "command": "//Preenche todos os campos do formulario de contato",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c8427b2-73c3-4bd6-bb6a-ec182a59c146",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-name",
+      "targets": [],
+      "value": "Jéssica Rodrigues"
+    }, {
+      "id": "45ee3732-7393-4fc2-a5b7-d91c18f83bbf",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-email",
+      "targets": [],
+      "value": "jessica@teste.com"
+    }, {
+      "id": "28ca72ba-4d0c-47b3-a25e-451bdc8e92ab",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-subject",
+      "targets": [],
+      "value": "Curso Gratuito de selenium"
+    }, {
+      "id": "56b809f5-fc37-461c-bea7-60d2bd88491c",
+      "comment": "",
+      "command": "type",
+      "target": "name=your-message",
+      "targets": [],
+      "value": "Quais são os modulos desse curso?"
+    }, {
+      "id": "c348c790-a2ea-4867-ae41-c3a2be98c20e",
+      "comment": "",
+      "command": "//Clica no botao enviar",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d988f9e3-270f-4cc2-94ad-fd70852f5203",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wpcf7-submit",
+      "targets": [
+        ["css=.wpcf7-submit", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1286f4bc-bf4e-4729-88fb-20802821ab94",
+      "comment": "",
+      "command": "//Valida a mensagem de sucesso do envio",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f2694456-18d8-439b-92cb-93089dbdebcb",
+      "comment": "",
+      "command": "pause",
+      "target": "15000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1db59a61-e53c-4fdc-80e6-4c3b34055392",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.wpcf7-response-output",
+      "targets": [
+        ["css=.wpcf7-response-output", "css:finder"],
+        ["xpath=//div[@id='wpcf7-f372-p24-o1']/form/div[2]", "xpath:idRelative"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": "Agradecemos a sua mensagem. Responderemos em breve."
+    }]
+  }],
+  "suites": [{
+    "id": "182203c4-ee23-4ebd-809c-921c75685770",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5d20ef21-5219-449c-aa65-3f903720534c", "f6b5901f-eca3-499e-bf71-86f783823c7f", "38f76680-7dca-4e93-97e8-259216b7872b"]
+  }],
+  "urls": ["https://livros.inoveteste.com.br/"],
+  "plugins": []
+}
