@@ -2,8 +2,13 @@ package com.example.tests;
 
 //import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
-import org.testng.annotations.*;
-import static org.testng.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.junit.Test;
 import org.openqa.selenium.*;
 //import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -17,7 +22,7 @@ public class CT01ValidarLayout {
   private StringBuffer verificationErrors = new StringBuffer();
   private final String pathIEDriver = "C:\\Selenium\\IEDriverServer.exe";
 
-  @BeforeClass(alwaysRun = true)
+  @BeforeClass
   public void setUp() throws Exception {
 	System.setProperty("webdriver.ie.driver", pathIEDriver);
     driver = new InternetExplorerDriver();
@@ -39,7 +44,7 @@ public class CT01ValidarLayout {
     assertTrue(isElementPresent(By.cssSelector("input.wpcf7-form-control.wpcf7-submit")));
   }
 
-  @AfterClass(alwaysRun = true)
+  @AfterClass
   public void tearDown() throws Exception {
     driver.quit();
     String verificationErrorString = verificationErrors.toString();
