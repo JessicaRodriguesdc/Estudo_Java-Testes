@@ -37,8 +37,8 @@ public class CT01ValidarLayoutTest {
   
   @Before
   public void setUp() {
-	System.setProperty("webdriver.Chrome.driver", pathChromeDriver);
-//	System.setProperty("webdriver.chrome.whitelistedIps", pathChromeDriver);      
+//	System.setProperty("webdriver.chrome.driver", pathChromeDriver);
+	System.setProperty("webdriver.chrome.whitelistedIps", pathChromeDriver);      
     driver = new ChromeDriver();
     driver.manage().window().maximize();
     js = (JavascriptExecutor) driver;
