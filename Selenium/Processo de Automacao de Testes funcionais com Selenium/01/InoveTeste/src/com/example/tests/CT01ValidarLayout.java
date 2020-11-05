@@ -20,7 +20,7 @@ public class CT01ValidarLayout {
   private String baseUrl;
   //private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
-  private final String pathIEDriver = "C:\\Selenium\\IEDriverServer.exe";
+  private final String pathIEDriver = "@C:\\Program Files\\Selenium\\IEDriverServer.exe";
 
   @BeforeClass
   public void setUp() throws Exception {
@@ -44,14 +44,14 @@ public class CT01ValidarLayout {
     assertTrue(isElementPresent(By.cssSelector("input.wpcf7-form-control.wpcf7-submit")));
   }
 
-  @AfterClass
-  public void tearDown() throws Exception {
-    driver.quit();
-    String verificationErrorString = verificationErrors.toString();
-    if (!"".equals(verificationErrorString)) {
-      fail(verificationErrorString);
-    }
-  }
+//  @AfterClass
+//  public void tearDown() throws Exception {
+//    driver.quit();
+//    String verificationErrorString = verificationErrors.toString();
+//    if (!"".equals(verificationErrorString)) {
+//      fail(verificationErrorString);
+//    }
+//  }
 
 private boolean isElementPresent(By by) {
     try {
